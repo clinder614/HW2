@@ -10,12 +10,17 @@ package hw2;
  * @author courtneylinder
  */
 public class MathProgram {
+    MathBehavior b;
     public MathProgram(){
+        
+    }
+    
+    public void performSort(){
     
     }
     
-    public void pickProgram(){
-       
+    public void setMathBehavior(MathBehavior b){
+        this.b = b;
     }
     
 }
