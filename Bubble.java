@@ -19,7 +19,7 @@ public class Bubble implements MathBehavior {
         for (int i=0; i<size; i++) {
             boolean swapCheck = false;
             
-            for(int j=0; j<size; j++) {
+            for(int j=0; j<size-1; j++) {
                 if (num[j] > num[j+1]) {
                     int temp = num[j+1];
                     num[j+1]=num[j];
