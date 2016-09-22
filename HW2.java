@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author courtneylinder
+ * @author courtneylinder. kierstyn brandt
  */
 public class HW2 {
 
@@ -19,6 +19,8 @@ public class HW2 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner( System.in );
         int input;
+        String answer;
+        int answer2;
         MathProgram mp;
         boolean okay = false;
         while(!okay){
@@ -35,10 +37,11 @@ public class HW2 {
             }
             else if(input == 3){
                 mp = new Mathematica();
+                mp.performSort();
                 okay = true;
             }
             else{
-                System.out.println("You do not enter a valid choice. Please try again.");
+                System.out.println("You do not enter a valid choice. Please try again.\n");
             }
         
         }
