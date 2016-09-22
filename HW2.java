@@ -29,10 +29,12 @@ public class HW2 {
             input = userInput.nextInt();
             if(input == 1){
                 mp = new MyMath();
+                mp.performSort();
                 okay = true;
             }
             else if(input == 2){
                 mp = new MTool();
+                mp.performSort();
                 okay = true;
             }
             else if(input == 3){
