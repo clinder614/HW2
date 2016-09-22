@@ -12,7 +12,26 @@ package hw2;
  */
 public class Bubble implements MathBehavior {
  
-     public void mathSort(int[] num){
+     public int[] mathSort(int[] num){
+         
+        int size=num.length; 
         
+        for (int i=0; i<size; i++) {
+            boolean swapCheck = false;
+            
+            for(int j=0; j<size; j++) {
+                if (num[j] > num[j+1]) {
+                    int temp = num[j+1];
+                    num[j+1]=num[j];
+                    num[j]=temp;
+                    swapCheck=true;
+                }
+            }
+            if(!swapCheck){
+                break;
+            }
+        }
+        
+        return num;
      }
 }
