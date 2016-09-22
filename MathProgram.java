@@ -14,8 +14,8 @@ public class MathProgram {
     
     }
     
-    public MathProgram pickProgam(){
-        return null;
+    public void pickProgram(){
+       
     }
     
 }
